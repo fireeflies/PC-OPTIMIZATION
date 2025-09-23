@@ -76,6 +76,15 @@ reg add "%APP_KEY%" /v CpuPriorityClass /t REG_DWORD /d 6 /f
 reg add "%APP_KEY%" /v IoPriority /t REG_DWORD /d 6 /f
 reg add "%APP_KEY%" /v PagePriority /t REG_DWORD /d 6 /f
 
+set "APP_KEY=%IFEO_BASE%\PathOfExileSteam.exe\PerfOptions"
+reg add "%APP_KEY%" /v CpuPriorityClass /t REG_DWORD /d 6 /f
+reg add "%APP_KEY%" /v IoPriority /t REG_DWORD /d 6 /f
+reg add "%APP_KEY%" /v PagePriority /t REG_DWORD /d 6 /f
+
+set "APP_KEY=%IFEO_BASE%\PathOfExile_x64Steam.exe\PerfOptions"
+reg add "%APP_KEY%" /v CpuPriorityClass /t REG_DWORD /d 6 /f
+reg add "%APP_KEY%" /v IoPriority /t REG_DWORD /d 6 /f
+reg add "%APP_KEY%" /v PagePriority /t REG_DWORD /d 6 /f
 
 rem ::: System
 
@@ -132,5 +141,7 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution 
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cs2.exe" /v "UseLargePages" /t REG_DWORD /d "1" /f
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\destiny2.exe" /v "UseLargePages" /t REG_DWORD /d "1" /f
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\OutOfAction-Win64-Shipping.exe" /v "UseLargePages" /t REG_DWORD /d "1" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PathOfExile_x64Steam.exe" /v "UseLargePages" /t REG_DWORD /d "1" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PathOfExileSteam.exe" /v "UseLargePages" /t REG_DWORD /d "1" /f
 
 PAUSE
