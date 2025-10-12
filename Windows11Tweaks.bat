@@ -3159,6 +3159,9 @@ reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Education" /v IsEd
 rem ::: Hide Recommended Section via Policies
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v HideRecommendedSection /t REG_DWORD /d 1 /f
 
+rem ::: Remove Application Startup Delay after Windows Login
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v StartupDelayInMSec /t REG_DWORD /d 0 /f
+
 rem ::: REBOOT YOUR PC
 
 PAUSE
