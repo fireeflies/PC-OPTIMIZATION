@@ -13,11 +13,11 @@
 > - Currently tested and working on;
 >   - ```INTEL i9 12900K```
 >   - ```NVIDIA RTX 3080```
->   - ```WINDOWS 11 Pro [Version 24H2 Build 26100.4652]```
+>   - ```WINDOWS 11 Pro [Version 25H2 Build 26200.6899]```
 
 > [!WARNING]
 > - Tweaks are experimental.
-> - Tailored for an Intel, NVIDIA and Windows OS environment.
+> - Tailored for Intel CPU, NVIDIA GPU and Windows 11 OS.
 > - Expect increased temperatures, power consumption and usage of CPU and GPU.
 > - Use the scripts provided as a reference to test and tailor settings to your own environment.
 
@@ -49,7 +49,7 @@
 - Hyper-V ```Disable``` 
 - Intel Virtualization Technology ```Disable``` 
 - VT-d ```Disable``` 
-- Hyper-Threading ```Disable```
+- Hyper-Threading [_Dependant on Game/System_] ```Disable```
 - Spread Spectrum [_When Overclocking_]```Disable``` 
 - CPU C-States ```Disable``` 
 - CPU Power Throttling ```Disable``` 
@@ -68,7 +68,7 @@
 - High Performance Power Mode [_Intel Defaults_] ```Enable``` 
 - BCLK size [_Set to 100.00 Mhz_]```Enable``` 
 - High Precision Event Timer (HPET) ```Enable```
-- AVX Offset - Set to ```Enable``` and ```0```
+- AVX Offset - Set to ```Enable``` and ```0``` offset.
 - Load Line Calibration (LLC) [_Set a static voltage for CPU vcore and use LLC_] ```Enable```
 - Secure Boot ```Enable```
 
