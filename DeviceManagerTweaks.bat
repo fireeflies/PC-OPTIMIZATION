@@ -5,12 +5,11 @@ rem ::: Plundered by NEKR1D
 rem ::: Originally created by Shoober420
 rem ::: https://github.com/shoober420/windows11-scripts
 
-rem ::: Disables specific device manager services (such as chipset drivers) that are not used, and should be disable system-wide
+rem ::: Disables specific device manager services (such as chipset drivers) that are not used, and can be disable system-wide.
 
 rem ::: !!! Warning !!!
-rem ::: !!! DO NOT INSTALL !!!
 rem ::: !!! Your hardware, chipset and devices are different !!!
-rem ::: !!!  Use script as reference only !!!
+rem ::: !!! Use script as reference only !!!
 
 rem ::: "pnputil /enum-devices" shows all services
 
